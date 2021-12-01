@@ -1,7 +1,7 @@
 # MovilCars
 ESTE REPOSITORIO ES PARA UN APLICACION WEB DE VENTA DE VEHICULOS
 
-h3>Las recomendacines hasta el momento son:</h3>
+<h3>Las recomendacines hasta el momento son:</h3>
 
 1. Crear una cuenta en GitHub 
 
