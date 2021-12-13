@@ -1,0 +1,131 @@
+<!--<h2 class="page-header">
+    {{ Agrega un Vehículo}}
+</h2>-->
+<form ng-submit="guardar()">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Marca" ng-model="marca">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Nombre" ng-model="nombre">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Precio" ng-model="precio">
+    </div>
+    <a href="#/" class="btn btn-danger">Cancelar</a>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<section class="form-register">
+    <h4>Ver Vehículos Disponibles</h4>
+    <label for="category">Marca</label>
+    <select style="display: block; min-width: 212px;" class="controls">
+        <option value="">Todas las marcas</option>
+        <option value="40661">Audi</option>
+        <option value="66352">BMW</option>
+        <option value="60559">Honda</option>
+        <option value="60407">Hummer</option>
+        <option value="23629">Jaguar</option>
+        <option value="66811">Mazda</option>
+        <option value="75966">Mercedes-Benz</option>
+        <option value="56870">Porsche</option>
+        <option value="43943">Suzuki</option>
+        <option value="60297">Toyota</option>
+    </select>
+    <label for="category">Precio</label>
+    <select class="controls">
+        <option value="">Precio desde</option>
+        <option value="1">Sin precio mínimo</option>
+        <option value="50000000">$ 50.000.000</option>
+        <option value="100000000">$ 100.000.000</option>
+        <option value="150000000">$ 150.000.000</option>
+        <option value="200000000">$ 200.000.000</option>
+        <option value="250000000">$ 250.000.000</option>
+        <option value="300000000">$ 300.000.000</option>
+        <option value="350000000">$ 350.000.000</option>
+        <option value="400000000">$ 400.000.000</option>
+        <option value="450000000">$ 450.000.000</option>
+        <option value="500000000">$ 500.000.000</option>
+        <option value="550000000">$ 550.000.000</option>
+        <option value="600000000">$ 600.000.000</option>
+        <option value="650000000">$ 650.000.000</option>
+        <option value="700000000">$ 700.000.000</option>
+        <option value="750000000">$ 750.000.000</option>
+        <option value="800000000">$ 800.000.000</option>
+        <option value="850000000">$ 850.000.000</option>
+        <option value="900000000">$ 900.000.000</option>
+    </select>
+    <select class="controls">
+        <option value="">Precio hasta</option>
+        <option value="50000000">$ 50.000.000</option>
+        <option value="100000000">$ 100.000.000</option>
+        <option value="150000000">$ 150.000.000</option>
+        <option value="200000000">$ 200.000.000</option>
+        <option value="250000000">$ 250.000.000</option>
+        <option value="300000000">$ 300.000.000</option>
+        <option value="350000000">$ 350.000.000</option>
+        <option value="400000000">$ 400.000.000</option>
+        <option value="450000000">$ 450.000.000</option>
+        <option value="500000000">$ 500.000.000</option>
+        <option value="550000000">$ 550.000.000</option>
+        <option value="600000000">$ 600.000.000</option>
+        <option value="650000000">$ 650.000.000</option>
+        <option value="700000000">$ 700.000.000</option>
+        <option value="750000000">$ 750.000.000</option>
+        <option value="800000000">$ 800.000.000</option>
+        <option value="850000000">$ 850.000.000</option>
+        <option value="900000000">$ 900.000.000</option>
+        <option value="0">Sin precio máximo</option>
+    </select>
+    <label for="category">Año</label>
+    <select class="controls">
+        <option value="">Año desde</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+    </select>
+    <select class="controls">
+        <option value="">Año hasta</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+    </select>
+    <button class="botons" type="submit">
+        <a routerLink="/administracion/buscar-producto">Buscar</a>
+    </button>
+</section>
+<br>

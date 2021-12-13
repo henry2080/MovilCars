@@ -1,0 +1,25 @@
+<nav class="bn">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"
+      style="font-family:Brush Script MT">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MovilCars</a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li *ngIf="!sesionIniciada"><a routerLink="/nosotros">Acerca de Nosotros</a></li>
+      <li *ngIf="sesionIniciada"><a routerLink="/cliente">Tienda</a></li>
+      <li *ngIf="sesionIniciada"><a routerLink="/administracion/buscar-producto">Productos</a></li>
+      <li *ngIf="!sesionIniciada"><a routerLink="/seguridad/identificacion">Iniciar Sesion</a></li>
+      <li *ngIf="!sesionIniciada">{{nombre}}</li>
+      <li *ngIf="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar Sesion</a></li>
+      <li *ngIf="!sesionIniciada"><a routerLink="/seguridad/registro">Registrarse</a></li>
+    </ul>
+  </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <li *ngIf="!sesionIniciada"><a routerLink="/nosotros">Acerca de Nosotros</a></li>
+  <li *ngIf="sesionIniciada"><a routerLink="/cliente">Tienda</a></li>
+  <li *ngIf="sesionIniciada"><a routerLink="/administracion/buscar-producto">Productos</a></li>
+  <li *ngIf="!sesionIniciada"><a routerLink="/seguridad/identificacion">Iniciar Sesion</a></li>
+  <li *ngIf="sesionIniciada"><a routerLink="/seguridad/cerrar-sesion">Cerrar Sesion</a></li>
+  <li *ngIf="!sesionIniciada"><a routerLink="/seguridad/registro">Registrarse</a></li>
+  <li *ngIf="sesionIniciada"><a routerLink="/inicio">{{nombre}}</a></li>
+</ul>

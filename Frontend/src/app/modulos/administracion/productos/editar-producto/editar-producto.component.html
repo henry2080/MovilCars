@@ -1,0 +1,12 @@
+<form id="msform" [formGroup]="fgValidador" (ngSubmit)="EditarProducto()">
+    <input type="hidden" formControlName="id">
+    <fieldset>
+        <h2 class="fs-title">Edite su Producto</h2>
+        <input type="text" name="text" placeholder="Ingrese Nombre" formControlName="nombre">
+        <input type="text" name="text" placeholder="Ingrese Precio" formControlName="precio">
+        <input type="text" name="text" placeholder="Ingrese Imagen" formControlName="imagen">
+        <button name="next" class="next action-button" [disabled]="!fgValidador.valid">
+            <a routerLink="/administracion/buscar-producto">Guardar Producto</a>
+        </button>
+    </fieldset>
+</form>

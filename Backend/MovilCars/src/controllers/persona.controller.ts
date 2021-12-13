@@ -26,7 +26,6 @@ import {PersonaRepository} from '../repositories';
 import {AutenticacionService} from '../services';
 const fetch = require("node-fetch");
 
-@authenticate('admin')
 export class PersonaController {
   constructor(
     @repository(PersonaRepository)

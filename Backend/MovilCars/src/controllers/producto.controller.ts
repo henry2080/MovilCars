@@ -21,8 +21,6 @@ import {
 import {Producto} from '../models';
 import {ProductoRepository} from '../repositories';
 
-@authenticate('admin')
-@authenticate('vendedor')
 export class ProductoController {
   constructor(
     @repository(ProductoRepository)
