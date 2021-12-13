@@ -39,13 +39,13 @@ export class Persona extends Entity {
     required: false,
   })
   clave: string;
-
-  @property({//Nueva propiedad de verificacion
+/*
+  @property({ Nueva propiedad de verificacion
     type: 'string',
     required: true,
   })
-  rol: string;//Nueva propiedad de verificacion
-
+  rol: string; Nueva propiedad de verificacion
+*/
   @hasMany(() => Pedido)
   pedidos: Pedido[];
 

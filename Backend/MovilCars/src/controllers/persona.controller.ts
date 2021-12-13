@@ -51,7 +51,7 @@ export class PersonaController {
           nombre: p.nombre,
           correo: p.correo,
           id: p.id,
-          rol: p.rol//Nueva propiedad de verificacion
+          //rol: p.rol Nueva propiedad de verificacion
         },
         tk: token
       }
